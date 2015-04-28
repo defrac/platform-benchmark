@@ -3,7 +3,7 @@
   "package": "defrac.benchmark",
   "version": "1.0",
 
-  "main": "defrac.benchmark.AllBenchmarks"
+  "main": "defrac.benchmark.AllBenchmarks",
   "strictMode": "false",
   "debug": "false",
   "optimize": "true",
