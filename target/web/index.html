@@ -2,9 +2,9 @@
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <script src="platformBenchmark/platform_benchmark.js" async onload="window.app={};main(window.app)"></script>
+    <script src="defrac.benchmark/app.js" async onload="document.getElementById('run').disabled=false"></script>
     <script>
-    function defracPrint(msg) {
+    function defracStdout(msg) {
       var textarea = document.getElementById('console');
       textarea.textContent += msg+'\n';
       textarea.scrollTop = textarea.scrollHeight;
@@ -17,7 +17,7 @@
     </style>
   </head>
   <body>
+    <input type="button" value="Run" id="run" disabled onclick="main()"><br>
     <textarea id="console" cols="80" rows="60" disabled></textarea>
-    <canvas id="defrac-stage"></canvas>
-    </body>
+  </body>
 </html>

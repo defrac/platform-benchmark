@@ -1,19 +1,17 @@
 {
   "name": "defrac Platform Benchmarks",
   "package": "defrac.benchmark",
-  "web": {
-    "js": "platform_benchmark.js",
-  },
+  "version": "1.0",
+
+  "main": "defrac.benchmark.AllBenchmarks"
   "strictMode": "false",
   "debug": "false",
-  "identifier": "platformBenchmark",
+  "optimize": "true",
+
   "targets": [
     "android",
     "ios",
-    "web",
     "jvm",
-    "linux"
-  ],
-  "version": "1.0",
-  "main": "defrac.benchmark.AllBenchmarks"
+    "web",
+  ]
 }
